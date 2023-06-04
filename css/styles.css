@@ -1,53 +1,227 @@
 .container {
-    max-width: 1230px;
-    padding: 0px 30px;
-    margin: 0 auto;
+  max-width: 1230px;
+  padding: 0px 30px;
+  margin: 0 auto;
 }
 
 body {
-    font-family: Poppins, sans-serif;
-    color: #000000;
-
+  font-family: Poppins, sans-serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.5;
 }
+
+.secondery-title {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    padding: 7px 23px;
+    color: #ffffff;
+    background-color: #070707;
+    border-radius: 20px;
+
+    transition: background-color 0.2s ease-in, top 0.2s ease-in;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #312e2e;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+    background-color: #000000;
+}
+
 /* Header */
 .header {
-    background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
-.header-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 76px;
 }
 /* Logo */
 .logo {
-    position: relative;
-    font-size: 32px;
-    font-weight: 700;
-    color: inherit;
-    padding: 46px 12px 3px 0px;
+  position: relative;
+  font-size: 32px;
+  font-weight: 700;
+  color: inherit;
+  padding: 46px 12px 3px 0px;
 }
-.logo::after{
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-color: #FDA300;
-    border-radius: 8px;
+.logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #fda300;
+  border-radius: 8px;
 }
 /* Nav */
-.nav-list{
-    display: flex;
-    font-weight: 500;
-    line-height: 1.5;
-   
+.nav-list {
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
 }
 
-.nav-link{
-    color: #000000;
-    margin-left: 50px;
+.nav-link {
+  color: #000000;
+  margin-left: 50px;
+}
+
+.nav-link.active {
+  color: #606060;
+}
+
+.btn-nav {
+    display: none;
+}
+
+/* Header Content */
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header-content {
+  max-width: 500px;
+  margin-top: 124px;
+}
+
+.header-heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.header-content > p {
+  line-height: 2;
+}
+
+/* Service */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.service {
+  padding: 90px 0px;
+}
+
+.service-row {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+}
+.service-card {
+  flex: 1 1 0;
+  min-width: 315px;
+}
+.service-card-img {
+  margin-bottom: 30px;
+}
+.service-card-title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.servisce-card-content {
+  line-height: 2;
+}
+
+/* Portfolio */
+.portfolio {
+  padding: 90px 0px;
+  background-color: #fff1f1;
+}
+.portfolio-title {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.project {
+  text-align: center;
+}
+
+.project + .project {
+      margin-top: 90px;
+}
+.project-img {
+  margin-bottom: 40px;
+}
+.project-title {
+  font-size: 18px;
+}
+
+.project-link {
+  text-decoration-line: underline;
+  color: #070707;
+}
+
+/* Footer */
+
+.footer {
+    padding: 90px 0px;
+    text-align: center;
+}
+
+.contacts-title {
+    margin-bottom: 40px;
+}
+
+.contacs-content {
+    max-width: 480px;
+    font-size: 18px;
+    margin: 0px auto 40px;
+    color: #070707;
+    
+}
+.contacts-btn {
+    margin-bottom: 80px;
+
+}
+
+.contacts-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts-social {
+   margin-bottom: 40px; 
+}
+
+.social-link {
+    padding-right: 60px;
+}
+
+.social-link_right {
+    padding-right: 0px;
+}
+.contacts-footer {
+    color: rgba(130, 130, 130, 1);
+;
 }
